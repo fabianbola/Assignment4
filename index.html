@@ -1,161 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continuing Education Course Survey</title>
-</head>
-<body>
-    <header>
-        <h1>CENTENNIAL COLLEGE</h1>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Continuing Education Course Survey</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
     <body>
-        <h3>Continuing Education Course/Instructor Evaluation</h3><br>
-        <p>Plase read this statement carefully and consider each one individually. Use the <b>computer car</b> to make your chose. Give only <b>one answer</b> for each question.</p>
-        <form action="Continuing Education Course Survey">
-                <label for="CourseName">First Name&nbsp;<sup>*</sup>:</label>
-                <input type="text" name="CourseName" id="CourseName" placeholder="Enter name" required> <br> <br>
-                <label for="Semester">Semester&nbsp;<sup>*</sup>:</label>
-                <select name="Semester" id="Semester">
-                    <option value="Select"></option>
-                    <option value="Fall">Fall</option>
-                    <option value="Winter">Winter</option>
-                    <option value="Sprint/Summer">Sprint/Summer</option>
-                </select><br><br>
-                <label for="Year">Year&nbsp;<sup>*</sup>:</label>
-                <input type="text" name="Year" id="Year" placeholder="Enter the year of the course" required> <br> <br>
-                <label for="Instructor">Instructor&nbsp;<sup>*</sup>:</label>
-                <input type="Instructor" name="Instructor" id="Instructor" placeholder="Enter the instructor name" required> <br> <br>
-            
-            <fieldset><legend><b>Instructor</b></legend>
-                <p>How would you rate the instructor's</p>
-                <ol type="1">
-                    <li>
-                        <label for="Knowledge"><b>Knowledge</b> of subject?&nbsp;<sup>*</sup></label>
-                        <select name="Knowledge" id="Knowledge">
+        <header>
+            <img src="centennialcollege_logo.jpg" alt="Logo centennial" class="Headimage">
+        </header>
+        <body>
+            <h1>Continuing Education Course/Instructor Evaluation</h1><br>
+            <p>Plase read this statement carefully and consider each one individually. Use the <b>computer car</b> to make your chose. Give only <b>one answer</b> for each question.</p>
+            <div class="container">
+                <form action="Continuing Education Course Survey">
+                        <label for="CourseName">First Name&nbsp;<sup>*</sup>:</label>
+                        <input type="text" name="CourseName" id="CourseName" placeholder="Enter name" required size="60%">  <br> <br>
+                        <label for="Semester">Semester&nbsp;<sup>*</sup>:</label>
+                        <select name="Semester" id="Semester" required>
                             <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Helpfulness"><b>Helpfulness</b>?&nbsp;<sup>*</sup></label>
-                        <select name="Helpfulness" id="Helpfulness">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Courtesy"><b>Courtesy and respect</b> for all the students?&nbsp;<sup>*</sup></label>
-                        <select name="Courtesy" id="Courtesy">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Comunication"><b>Comunication</b> skills?&nbsp;<sup>*</sup></label>
-                        <select name="Comunication" id="Comunication">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Performance">overall <b>performance</b>?&nbsp;<sup>*</sup></label>
-                        <select name="Performance" id="Performance">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br>
-                    </li>
-            </fieldset> <br>
-            <fieldset><legend><b>Course</b></legend>
-                <ol type="1">
-                    <li>
-                        <label for="Material">How would you rate the <b>course material</b>?&nbsp;<sup>*</sup></label>
-                        <select name="Material" id="Material">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Expectation">How much did this course meet your <b>expectation</b>?&nbsp;<sup>*</sup></label>
-                        <select name="Expectation" id="Expectation">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Overall">How do you rate this course <b>(Overall)</b>?&nbsp;<sup>*</sup></label>
-                        <select name="Overall" id="Overall">
-                            <option value="Select"></option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Fair">Fair</option>
-                            <option value="Not Satisfactory">Not Satisfactory</option>
-                        </select><br><br>
-                    </li>
-                </ol>
-            </fieldset><br>
-            <fieldset><legend><b>General information</b></legend>
-                <ol type="1">
-                    <li>
-                        <label for="outline">Was the <b>course outline</b> reviewed/explained at the biginning of your course?&nbsp;<sup>*</sup></label>
-                        <select name="outline" id="outline">
-                            <option value="Select"></option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                            <option value="Not sure">Not sure</option>
-                        </select><br><br>
-                    </li>
-                    <li>
-                        <label for="Recommend">Would you <b>recommend</b> this course to a friend with the same interests?&nbsp;<sup>*</sup></label>
-                        <select name="Recommend" id="Recommend">
-                            <option value="Select"></option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                            <option value="Not sure">Not sure</option>
-                        </select><br><br>
-                    </li>
-                </ol>
-            </fieldset><br>
-            <fieldset><legend><b>Any other comments</b></legend>
-                <ol>
-                    <li>
-                        <label for="bestThings">What is the <b>best thing</b> about this course?</label>
-                        <textarea name="bestThings" id="bestThings" cols="30" rows="1"></textarea><br><br>
-                    </li>
-                    <li>
-                        <label for="improve">How could we <b>improve</b> this course?</label>
-                        <textarea name="improve" id="improve" cols="30" rows="1"></textarea><br><br>
-                    </li>
-                    <li>
-                        <label for="other">Other</label>
-                        <textarea name="other" id="other" cols="30" rows="10"></textarea>
-                    </li>
-                </ol>
-            </fieldset><br>
-        </form>
-        <p>Thank you! We pay attention to your feedback</p>
-        <p>web <a href="https://www.centennialcollege.ca/?utm_source=google&utm_medium=cpc&utm_campaign=hsm&utm_term=brand&gad_source=1&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GohgrwMg4NG5KoIRvEW62ioQaBDWf_FeHjcSulNunkIoyrO2Z_WF7s4aAjmMEALw_wcB"> Web: www.centennialcollege.ca/continuing_education</a>    and Email: <a href = "mailto: continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+                            <option value="Fall">Fall</option>
+                            <option value="Winter">Winter</option>
+                            <option value="Sprint/Summer">Sprint/Summer</option>
+                        </select>
+                        <label for="Year">Year&nbsp;<sup>*</sup>:</label>
+                        <input type="text" name="Year" id="Year" placeholder="Enter the year of the course" required> <br> <br>
+                        <label for="Instructor">Instructor&nbsp;<sup>*</sup>:</label>
+                        <input type="Instructor" name="Instructor" id="Instructor" placeholder="Enter the instructor name" required size="60%"> <br> <br>
+                    
+                    <fieldset><legend><b>Instructor</b></legend>
+                        <p>How would you rate the instructor's</p>
+                        <ol type="1">
+                            <li>
+                                <label for="Knowledge"><b>Knowledge</b> of subject?&nbsp;<sup>*</sup></label>
+                                <select name="Knowledge" id="Knowledge">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Helpfulness"><b>Helpfulness</b>?&nbsp;<sup>*</sup></label>
+                                <select name="Helpfulness" id="Helpfulness">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Courtesy"><b>Courtesy and respect</b> for all the students?&nbsp;<sup>*</sup></label>
+                                <select name="Courtesy" id="Courtesy">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Comunication"><b>Comunication</b> skills?&nbsp;<sup>*</sup></label>
+                                <select name="Comunication" id="Comunication">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Performance">overall <b>performance</b>?&nbsp;<sup>*</sup></label>
+                                <select name="Performance" id="Performance">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br>
+                            </li>
+                    </fieldset> <br>
+                    <fieldset><legend><b>Course</b></legend>
+                        <ol type="1">
+                            <li>
+                                <label for="Material">How would you rate the <b>course material</b>?&nbsp;<sup>*</sup></label>
+                                <select name="Material" id="Material">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Expectation">How much did this course meet your <b>expectation</b>?&nbsp;<sup>*</sup></label>
+                                <select name="Expectation" id="Expectation">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Overall">How do you rate this course <b>(Overall)</b>?&nbsp;<sup>*</sup></label>
+                                <select name="Overall" id="Overall">
+                                    <option value="Select"></option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Not Satisfactory">Not Satisfactory</option>
+                                </select><br><br>
+                            </li>
+                        </ol>
+                    </fieldset><br>
+                    <fieldset><legend><b>General information</b></legend>
+                        <ol type="1">
+                            <li>
+                                <label for="outline">Was the <b>course outline</b> reviewed/explained at the biginning of your course?&nbsp;<sup>*</sup></label>
+                                <select name="outline" id="outline">
+                                    <option value="Select"></option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Not sure">Not sure</option>
+                                </select><br><br>
+                            </li>
+                            <li>
+                                <label for="Recommend">Would you <b>recommend</b> this course to a friend with the same interests?&nbsp;<sup>*</sup></label>
+                                <select name="Recommend" id="Recommend">
+                                    <option value="Select"></option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Not sure">Not sure</option>
+                                </select><br><br>
+                            </li>
+                        </ol>
+                    </fieldset><br>
+                    <fieldset><legend><b>Any other comments</b></legend>
+                        <ol>
+                            <li>
+                                <label for="bestThings">What is the <b>best thing</b> about this course?</label>
+                                <textarea name="bestThings" id="bestThings" cols="30" rows="1"></textarea><br><br>
+                            </li>
+                            <li>
+                                <label for="improve">How could we <b>improve</b> this course?</label>
+                                <textarea name="improve" id="improve" cols="30" rows="1"></textarea><br><br>
+                            </li>
+                            <li>
+                                <label for="other">Other</label><br>
+                                <textarea name="other" id="other" cols="30" rows="10"></textarea>
+                            </li>
+                        </ol>
+                    </fieldset><br>
+                    <input type="reset" name="Reset" id="Reset" value="Reset form">
+                    <input type="submit" name="submit" id="submit" value="Submit form">
+                </form>
+            </div>
+            <p>Thank you! We pay attention to your feedback</p>
+            <p>web <a href="https://www.centennialcollege.ca/?utm_source=google&utm_medium=cpc&utm_campaign=hsm&utm_term=brand&gad_source=1&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GohgrwMg4NG5KoIRvEW62ioQaBDWf_FeHjcSulNunkIoyrO2Z_WF7s4aAjmMEALw_wcB"> Web: www.centennialcollege.ca/continuing_education</a>    and Email: <a href = "mailto: continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+        </body>
     </body>
-</body>
-</html>
+    </html>
